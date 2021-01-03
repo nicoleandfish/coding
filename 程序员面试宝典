@@ -1,0 +1,60 @@
+T1 两个二进制数的异或结果是多少？
+T2 递归函数最终会结束，那么这个函数一定（不定项选择）：
+  1.使用了局部变量
+  2.有一个分支不掉用自身
+  3.使用了全局变量或者使用了一个或多个参数
+T3 以下函数的结果是什么？
+```
+int cal(int x)
+{
+if(x==0)
+return 0;
+else return x+cal(x-1)
+}
+```
+T4 以下程序的结果是什么？
+```
+void foo(int *a, int *b)
+{
+*a = *a + *b
+*b = *a - *b
+*a = *a - *b
+}
+void main()
+{
+int a=1,b=2,c=3;
+foo(&a,&b);
+foo(&b,&c);
+foo(&c,&a);
+printf("%d,%d,%d", a,b,c)
+}
+```
+T5 下面哪项不是链表优于数组的特点？
+  1.方便删除 2.方便插入 3.长度可变 4.存储空间小
+T6 T(n)=25T(n/5)+n^2的时间复杂度是什么？
+T7 n个顶点、m条边的全连通图，至少去掉几条边才能构成一棵树？
+T8 正则表达式（ 01｜ 10 ｜ 1001 ｜ 0110）*与下列哪个表达式一样？
+  1.（ 0｜1）*   2.（01｜01）*   3.（01｜10）*   4.（01｜1）*
+T9 如何减少换页错误？
+  1.进程倾向于占用CPU
+  2.访问局部性（locality of reference）满足进程要求
+  3.进程倾向于占用I/O
+  4.使用基于最短剩余时间（shortest remaining time）的调度机制
+  5.减少页的大小
+T10 实现两个N*N矩阵的乘法，矩阵由一维数组表示。
+T11 找到单向链表中间那个元素，如果有两个则取前面一个。
+T12 长度为n的整数数组，找出其中任意(n-1)个乘积最大的那一组，只能用乘法，不可用除法。要求对算法的时间复杂度和空间复杂度作出分析。
+
+# ch5 程序设计基本概念
+T1 Which of the following statements describe the results of executing the code snippet below in C++?（下列C++代码的输出结果是什么？）
+```
+int i = 1;
+void main()
+{
+  int i = i;
+}
+```
+  A. The i within main will have an undefined value. main()里的i是一个未定义值
+  B. The i within main will have a value of 1.  main()里的i值为1
+  C. The compiler will not allow this statement.  编译器不允许这种写法
+  D. The i within main will have a value of 0.  main()里的i值为0
